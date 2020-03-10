@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1573437791 source:c:\users\dell\desktop\数据结构及实验\实验四\实验4_实验中练习1\logitree.cpp
+	"exprtree.h"
+
+1573359055 c:\users\dell\desktop\数据结构及实验\实验四\实验4_实验中练习1\exprtree.h
+	<stdio.h>
+	<iostream>
+	<algorithm>
+	<string>
+	<string.h>
+
+1573437591 source:c:\users\dell\desktop\数据结构及实验\实验四\实验4_实验中练习1\testlogitree.cpp
+	"exprtree.h"
+

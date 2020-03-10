@@ -1,0 +1,36 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: 5_8 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\DELL\AppData\Local\Temp\RSPA4F3.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fo"Debug/" /Fd"Debug/" /FD /GZ  /c 
+"F:\c++实验课\实验五\5_8\5_8.cpp"
+]
+Creating command line "cl.exe @C:\Users\DELL\AppData\Local\Temp\RSPA4F3.tmp" 
+Creating temporary file "C:\Users\DELL\AppData\Local\Temp\RSPA504.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib  kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/5_8.pdb" /debug /machine:I386 /out:"Debug/5_8.exe" /pdbtype:sept 
+".\Debug\5_8.obj"
+]
+Creating command line "link.exe @C:\Users\DELL\AppData\Local\Temp\RSPA504.tmp"
+<h3>Output Window</h3>
+Compiling...
+5_8.cpp
+f:\c++实验课\实验五\5_8\5_8.cpp(85) : error C2143: syntax error : missing ';' before '.'
+f:\c++实验课\实验五\5_8\5_8.cpp(85) : error C2143: syntax error : missing ';' before '.'
+f:\c++实验课\实验五\5_8\5_8.cpp(86) : error C2143: syntax error : missing ';' before '.'
+f:\c++实验课\实验五\5_8\5_8.cpp(86) : error C2143: syntax error : missing ';' before '.'
+执行 cl.exe 时出错.
+
+
+
+<h3>Results</h3>
+5_8.exe - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

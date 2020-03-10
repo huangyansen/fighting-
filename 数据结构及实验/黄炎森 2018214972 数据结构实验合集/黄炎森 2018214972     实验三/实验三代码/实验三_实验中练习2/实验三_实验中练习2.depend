@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1571544785 source:c:\users\dell\desktop\数据结构及实验\实验三\实验三_实验中练习2\stackdwn.cpp
+	"stackdwn.h"
+
+1571544785 c:\users\dell\desktop\数据结构及实验\实验三\实验三_实验中练习2\stackdwn.h
+	<stdio.h>
+	<stdlib.h>
+	<iostream>
+	<string>
+	<string.h>
+	<algorithm>
+
+1571544798 source:c:\users\dell\desktop\数据结构及实验\实验三\实验三_实验中练习2\stacktest.cpp
+	"stackdwn.h"
+

@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1571538485 source:c:\users\dell\desktop\数据结构及实验\实验三\实验三_实验前练习\stacksql.cpp
+	"stacklnk.h"
+
+1571533508 c:\users\dell\desktop\数据结构及实验\实验三\实验三_实验前练习\stacklnk.h
+	<stdio.h>
+	<stdlib.h>
+	<iostream>
+	<string>
+	<string.h>
+	<algorithm>
+
+1571538916 source:c:\users\dell\desktop\数据结构及实验\实验三\实验三_实验前练习\teststack.cpp
+	"stacksql.h"
+
+1571537295 c:\users\dell\desktop\数据结构及实验\实验三\实验三_实验前练习\stacksql.h
+	<stdio.h>
+	<stdlib.h>
+	<iostream>
+	<string>
+	<string.h>
+	<algorithm>
+

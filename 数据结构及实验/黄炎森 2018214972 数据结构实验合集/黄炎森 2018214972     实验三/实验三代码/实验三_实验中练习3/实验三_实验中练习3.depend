@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1571546149 source:c:\users\dell\desktop\数据结构及实验\实验三\实验三_实验中练习3\delim.cpp
+	<stdio.h>
+	<string.h>
+	<string>
+	<iostream>
+	<algorithm>
+	<stack>
+

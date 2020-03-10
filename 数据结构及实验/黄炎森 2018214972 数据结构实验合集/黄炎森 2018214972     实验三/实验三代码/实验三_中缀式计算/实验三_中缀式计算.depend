@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1571629605 source:c:\users\dell\desktop\数据结构及实验\实验三\实验三_中缀式计算\main.cpp
+	<stdio.h>
+	<iostream>
+	<string>
+	<string.h>
+	<map>
+	<stack>
+

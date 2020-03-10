@@ -1,0 +1,102 @@
+#include <stdio.h>
+#include <iostream>
+using namespace std;
+
+class Time
+{
+    private:
+       int H,M,S;
+       static int count_;
+
+    public:
+        Time(int h=0,int m=0,int s=0)
+        {
+            H=h,M=m,S=s;
+            count_++;
+            cout<<"construct Time "<<count_<<"   ";
+            cout<<H<<":"<<M<<":"<<S<<endl;
+        }
+
+        Time(Time& t)
+        {
+            count_++;
+            cout<<"copy construct Time "<<count_<<"   ";
+            cout<<t.H<<":"<<t.M<<":"<<t.S<<endl;
+            H=t.H,M=t.M,S=t.S;
+        }
+
+        void SetTime(int h,int m,int s)
+        {
+            H=h,M=m,S=s;
+        }
+
+        void ShowTime()
+        {
+            cout<<H<<":"<<M<<":"<<S<<endl;
+        }
+
+        int Geth()
+        {
+            return H;
+        }
+        int Getm()
+        {
+            return M;
+        }
+        int Gets()
+        {
+            return S;
+        }
+
+        ~Time()
+        {
+            cout<<"destruct Time "<<count_<<"   ";
+            cout<<H<<":"<<M<<":"<<S<<endl;
+            count_--;
+        }
+};
+
+int Time::count_=0;
+
+class TrainTime
+{
+    private:
+        char *num;//车辆信息
+        Time stime;
+        Time etime;
+
+    public:
+        TrainTime(char *num,Time S,Time E):stime(S),etime(E)
+        {
+            this->num=num;
+            cout<<"construct TrainTime\n";
+        }
+
+        Time TripTime()
+        {
+            Time temp;
+            int th,tm,ts;
+            int jw = 0;//进位
+            (ts=etime.Gets()-stime.Gets()) > 0 ? jw=0:ts+=60,jw=1;
+            (tm=etime.Getm()-stime.Getm()-jw)>0 ? jw=0:tm+=60,jw=1;
+            (th=etime.Geth()-stime.Geth()-jw)>0 ? jw=0:th+=24;
+
+            temp.SetTime(th,tm,ts);
+            return temp;
+        }
+
+        ~TrainTime()
+        {
+            cout<<"destruct TrainTime\n";
+        }
+};
+
+int main()
+{
+    //Time C1(8,10,10),C2(6,1,2);
+    Time C3;
+    TrainTime T1("D6",Time(8,10,10),Time(6,1,2));
+    C3=T1.TripTime();
+    C3.ShowTime();
+    return 0;
+}

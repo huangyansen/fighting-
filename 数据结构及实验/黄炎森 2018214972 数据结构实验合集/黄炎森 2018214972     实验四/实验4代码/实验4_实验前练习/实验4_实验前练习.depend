@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1573442516 source:c:\users\dell\desktop\数据结构及实验\实验四\实验4_实验前练习\exprtree.cpp
+	"exptree.h"
+
+1573440783 c:\users\dell\desktop\数据结构及实验\实验四\实验4_实验前练习\exptree.h
+	<stdio.h>
+	<iostream>
+	<algorithm>
+	<string>
+	<string.h>
+
+1573440828 source:c:\users\dell\desktop\数据结构及实验\实验四\实验4_实验前练习\testexprtree.cpp
+	"exptree.h"
+
+1573442516 source:f:\数据结构及实验\实验四\实验4_实验前练习\exprtree.cpp
+	"exptree.h"
+
+1573440783 f:\数据结构及实验\实验四\实验4_实验前练习\exptree.h
+	<stdio.h>
+	<iostream>
+	<algorithm>
+	<string>
+	<string.h>
+
+1573440828 source:f:\数据结构及实验\实验四\实验4_实验前练习\testexprtree.cpp
+	"exptree.h"
+

@@ -1,0 +1,109 @@
+# depslib dependency file v1.0
+1560012268 source:c:\users\dell\desktop\student\main.cpp
+	"score.h"
+
+1527461753 c:\users\dell\desktop\student\score.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+
+1527462090 source:c:\users\dell\desktop\student\menu.cpp
+	"score.h"
+
+1527461679 source:c:\users\dell\desktop\student\score.cpp
+	"score.h"
+
+1446667744 source:c:\users\dell\desktop\acm\final text\main.cpp
+	<iostream>
+
+1560090905 source:c:\users\dell\desktop\final text\student 修改\main.cpp
+	"score.h"
+
+1560090905 c:\users\dell\desktop\final text\student 修改\score.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+
+1560090905 source:c:\users\dell\desktop\final text\student 修改\menu.cpp
+	"score.h"
+
+1560045305 source:c:\users\dell\desktop\final text\student 修改\score.cpp
+	"score.h"
+
+1560531882 source:c:\users\dell\desktop\final text - 2.0\student 修改\main.cpp
+	"score.h"
+
+1560532593 c:\users\dell\desktop\final text - 2.0\student 修改\score.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+
+1560614923 source:c:\users\dell\desktop\final text - 2.0\student 修改\menu.cpp
+	"score.h"
+
+1560613289 source:c:\users\dell\desktop\final text - 2.0\student 修改\score.cpp
+	"score.h"
+
+1560698026 source:c:\users\dell\desktop\final text - 3.0\student 修改\main.cpp
+	"score.h"
+
+1560781680 c:\users\dell\desktop\final text - 3.0\student 修改\score.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+
+1560699296 source:c:\users\dell\desktop\final text - 3.0\student 修改\menu.cpp
+	"score.h"
+
+1560782416 source:c:\users\dell\desktop\final text - 3.0\student 修改\score.cpp
+	"score.h"
+
+1560789048 source:c:\users\张宇峰\desktop\final text - 3.0\student 修改\main.cpp
+	"score.h"
+
+1560790079 c:\users\张宇峰\desktop\final text - 3.0\student 修改\score.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+
+1560790142 source:c:\users\张宇峰\desktop\final text - 3.0\student 修改\menu.cpp
+	"score.h"
+
+1560789855 source:c:\users\张宇峰\desktop\final text - 3.0\student 修改\score.cpp
+	"score.h"
+
+1560790227 source:c:\users\dell\desktop\final text - 3.1\final text - 3.0\student 修改\main.cpp
+	"score.h"
+
+1560790230 c:\users\dell\desktop\final text - 3.1\final text - 3.0\student 修改\score.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+
+1560853258 source:c:\users\dell\desktop\final text - 3.1\final text - 3.0\student 修改\menu.cpp
+	"score.h"
+
+1560856587 source:c:\users\dell\desktop\final text - 3.1\final text - 3.0\student 修改\score.cpp
+	"score.h"
+
+1560790227 source:c:\users\dell\desktop\final text - 成稿\final text - 3.0\student 修改\main.cpp
+	"score.h"
+
+1560790230 c:\users\dell\desktop\final text - 成稿\final text - 3.0\student 修改\score.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+
+1561004490 source:c:\users\dell\desktop\final text - 成稿\final text - 3.0\student 修改\menu.cpp
+	"score.h"
+
+1560858355 source:c:\users\dell\desktop\final text - 成稿\final text - 3.0\student 修改\score.cpp
+	"score.h"
+

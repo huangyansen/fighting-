@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1572192217 source:c:\users\dell\desktop\数据结构及实验\实验三\实验三_实验前练习_链表实现\stacklnk.cpp
+	"stacklnk.h"
+
+1571539123 c:\users\dell\desktop\数据结构及实验\实验三\实验三_实验前练习_链表实现\stacklnk.h
+	<stdio.h>
+	<stdlib.h>
+	<iostream>
+	<string>
+	<string.h>
+	<algorithm>
+
+1572192253 source:c:\users\dell\desktop\数据结构及实验\实验三\实验三_实验前练习_链表实现\teststack.cpp
+	"stacklnk.h"
+

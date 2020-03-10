@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1570584061 source:c:\users\dell\desktop\高程，数据结构\实验2_实验前练习\listdbl.cpp
+	"listdbl.h"
+
+1570584414 c:\users\dell\desktop\高程，数据结构\实验2_实验前练习\listdbl.h
+	<iostream>
+	<stdio.h>
+	<algorithm>
+	<string>
+	<string.h>
+
+1570584061 source:c:\users\dell\desktop\高程，数据结构\实验2_实验前练习\listdbltest.cpp
+	"listdbl.h"
+
+1571023306 source:c:\users\dell\desktop\数据结构及实验\实验二\实验2_实验前练习\listdbl.cpp
+	"listdbl.h"
+
+1571023306 c:\users\dell\desktop\数据结构及实验\实验二\实验2_实验前练习\listdbl.h
+	<iostream>
+	<stdio.h>
+	<algorithm>
+	<string>
+	<string.h>
+
+1572189601 source:c:\users\dell\desktop\数据结构及实验\实验二\实验2_实验前练习\listdbltest.cpp
+	"listdbl.h"
+

@@ -1,0 +1,152 @@
+#include <stdio.h>
+#include <iostream>
+using namespace std;
+
+class Line//线框
+{
+private:
+	int x,y;//参考点，对于矩形来说是左上角的点，对于圆来说是圆心
+	int thick;//粗细
+	char color[10];//颜色
+
+public:
+	Line(int x=0,int y=0,int thick=0.1,char* color=NULL)
+	{
+		this->x=x;
+		this->y=y;
+		this->thick=thick;
+		if(color!=NULL)
+			strcpy(this->color,color);
+	}
+
+	void show()
+	{
+		cout<<"The message of Line:\n";
+		cout<<"(x,y) is "<<"("<<x<<","<<y<<")"<<endl;
+		cout<<"thick is "<<thick<<endl;
+		cout<<"color is "<<color<<endl;
+	}
+};
+
+
+class Text//文本
+{
+private:
+	int size;//大小
+	char* content;//内容，需要动态分配
+	char color[10];//颜色
+
+public:
+	Text(int size, char* content=NULL, char* color=NULL)
+	{
+		this->size=size;
+		if(content!=NULL) //动态分配文本信息
+		{
+			int len=strlen(content);
+			this->content = new char[len+1];
+			strcpy(this->content,content);
+		}
+		if(color!=NULL)
+			strcpy(this->color,color);
+	}
+	
+	Text(){cout<<"空\n";}//空的构造函数
+
+	Text(Text& T)
+	{
+		this->size=T.size;
+		strcpy(this->color,T.color);
+		
+		int len=strlen(T.content);
+		this->content = new char[len+1];
+		strcpy(this->content,T.content);//注意！！！
+	}
+
+	void show()
+	{
+		cout<<"The message of Text:\n";
+		cout<<"size is "<<size<<endl;
+		cout<<"color is "<<color<<endl;
+		cout<<"content is "<<content<<endl;
+	}
+
+	~Text()
+	{
+		if(content!=NULL)
+		{
+			delete [] content;
+			content=NULL;
+		}
+	}
+};
+
+
+class Rectangle: public Line //继承线框类
+{
+private:
+	int length,high;//长，宽
+	Text text;//文本类为其数据成员
+	
+public:
+	Rectangle(int length,int high,int x,int y,int thick,char* color,Text T) : text(T),Line(x,y,thick,color)//这里用到了text的深拷贝构造函数
+	{
+		this->length=length;
+		this->high=high;
+	}
+
+	Rectangle(Rectangle& R): text(R.text),Line(R)  //从无到有的拷贝，一定要写空的Text构造函数，因为在调用拷贝构造函数，创建对象时没有给出初始化的参数
+	{                                 //对于继承类的拷贝构造函数：保证调用的是Line的拷贝构造函数而不是Line的缺省构造函数
+										//在Rectangle的拷贝构造函数的成员初始化列表里对Line指定一个初始化值：
+		this->length=R.length;
+		this->high=R.high;
+	}
+
+	void show()
+	{
+		cout<<"The message of Rectangle:\n";
+		cout<<"length is "<<length<<endl;
+		cout<<"high is "<<high<<endl;
+		Line::show();
+		text.show();
+	}
+};
+
+
+class ellipse: public Line //继承线框类
+{
+private:
+	int radius;//半径
+	Text text;//文本类为其数据成员
+	
+public:
+	ellipse(int radius,int x,int y,int thick,char* color,Text T) : text(T),Line(x,y,thick,color)
+	{
+		this->radius=radius;
+	}
+
+	ellipse(ellipse& E): text(E.text),Line(E) 
+	{
+		this->radius=E.radius;
+	}
+
+	void show()
+	{
+		cout<<"The message of ellipse:\n";
+		cout<<"radius is "<<radius<<endl;
+		Line::show();
+		text.show();
+	}
+};
+
+int main()
+{
+	char s[]="World!";
+	Text t1(1,s,"red");
+	//t1.show();
+	Rectangle Rec1(10,20,2,5,3,"black",t1);
+	Rec1.show();
+	Rectangle Rec2(Rec1);
+	Rec2.show();
+	return 0;
+}
+

@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1576771269 source:f:\数据结构及实验\实验五\testmain.cpp
+	"wtgraph.h"
+
+1576772331 f:\数据结构及实验\实验五\wtgraph.h
+	<stdio.h>
+	<iostream>
+	<string>
+	<string.h>
+	<map>
+	<set>
+
+1576768892 source:f:\数据结构及实验\实验五\testwtgraph.cpp
+	"wtgraph.h"
+

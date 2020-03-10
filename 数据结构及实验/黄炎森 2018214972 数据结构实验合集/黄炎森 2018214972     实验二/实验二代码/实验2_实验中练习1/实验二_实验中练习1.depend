@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1570845258 source:c:\users\dell\desktop\数据结构及实验\实验二\实验二_实验中练习1\puzzle.cpp
+	"puzzle.h"
+
+1570845335 c:\users\dell\desktop\数据结构及实验\实验二\实验二_实验中练习1\puzzle.h
+	<stdio.h>
+	<algorithm>
+	<iostream>
+	<string.h>
+	<string>
+
